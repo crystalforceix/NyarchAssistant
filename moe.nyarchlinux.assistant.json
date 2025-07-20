@@ -1,9 +1,9 @@
 {
-    "app-id" : "moe.nyarchlinux.assistant",
+    "app-id" : "moe.waifu.assistant",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
-    "command" : "nyarchassistant",
+    "command" : "waifuassistant",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -62,7 +62,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "."
+                    "url" : ".",
+                    "branch": "personal-branch"
                 }
             ]
         }
