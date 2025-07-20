@@ -1,4 +1,4 @@
-project('nyarchassistant',
+project('waifuassistant',
           version: '0.9.8',
     meson_version: '>= 0.62.0',
   default_options: [ 'warning_level=2', 'werror=false', ],

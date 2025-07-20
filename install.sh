@@ -1,6 +1,6 @@
 #!/bin/bash
-APPID="moe.nyarchlinux.assistant"
-BUNDLENAME="nyarchassistant.flatpak"
+APPID="moe.waifu.assistant"
+BUNDLENAME="waifuassistant.flatpak"
 flatpak-builder --install --user --force-clean flatpak-app "$APPID".json
 
 if [ "$1" = "bundle" ]; then

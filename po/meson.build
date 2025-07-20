@@ -1,1 +1,1 @@
-i18n.gettext('nyarchassistant', preset: 'glib')
+i18n.gettext('waifuassistant', preset: 'glib')

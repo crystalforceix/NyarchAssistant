@@ -37,7 +37,7 @@ from .handlers.smart_prompt import SmartPromptHandler
 if is_flatpak():
     BASE_PATH = "/app/data"
 else:
-    BASE_PATH = "/usr/share/nyarchassistant/data"
+    BASE_PATH = "/usr/share/waifuassistant/data"
 """
 Manage Newelle Application, create handlers, check integrity, manage settings...
 """

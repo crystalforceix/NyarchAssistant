@@ -1,9 +1,9 @@
 {
-    "app-id" : "moe.nyarchlinux.assistant",
+    "app-id" : "moe.waifu.assistant",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
-    "command" : "nyarchassistant",
+    "command" : "waifuassistant",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -56,7 +56,7 @@
       "modules/python3-markdownify.json",
       "modules/smart-prompts.json",
       {
-            "name" : "nyarchassistant",
+            "name" : "waifuassistant",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
