@@ -62,7 +62,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "."
+                    "url" : ".",
+                    "branch": "personal-branch"
                 }
             ]
         }
