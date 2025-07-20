@@ -17,6 +17,6 @@ jobs:
       - name: Flatpak build
         uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
-          bundle: nyarchlinux.flatpak
+          bundle: waifuassistant.flatpak
           manifest-path: moe.waifu.assistant.json
           cache-key: flatpak-builder-${{ github.sha }}
