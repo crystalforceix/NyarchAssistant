@@ -120,10 +120,10 @@ class Live2DHandler(AvatarHandler):
         return os.path.isdir(self.webview_path)
 
     def install(self):
-        subprocess.check_output(["git", "clone", "https://github.com/NyarchLinux/live2d-lipsync-viewer.git", self.webview_path])
-        subprocess.check_output(["wget", "-P", os.path.join(self.models_dir), "http://mirror.nyarchlinux.moe/Arch.tar.xz"])
-        subprocess.check_output(["tar", "-Jxf", os.path.join(self.models_dir, "Arch.tar.xz"), "-C", self.models_dir])
-        subprocess.Popen(["rm", os.path.join(self.models_dir, "Arch.tar.xz")])
+        subprocess.check_output(["git", "clone", "https://github.com/crystalforceix/live2d-lipsync-viewer.git", self.webview_path])
+        subprocess.check_output(["wget", "-P", os.path.join(self.models_dir), "https://files.catbox.moe/b1h0qm.xz"])
+        subprocess.check_output(["tar", "-Jxf", os.path.join(self.models_dir, "b1h0qm.xz"), "-C", self.models_dir])
+        subprocess.Popen(["rm", os.path.join(self.models_dir, "b1h0qm.xz")])
     
     def __start_webserver(self):
         folder_path = self.webview_path
