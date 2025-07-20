@@ -1,5 +1,3 @@
-gnome = import('gnome')
-
 desktop_file = i18n.merge_file(
         input: 'moe.waifu.assistant.desktop.in',
        output: 'moe.waifu.assistant.desktop',
@@ -27,8 +25,23 @@ if appstream_util.found()
   test('Validate appstream file', appstream_util, args: ['validate', appstream_file])
 endif
 
-install_data('moe.waifu.assistant.gschema.xml',
+install_data('moe.nyarchlinux.assistant.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
-gnome.compile_schemas()
+compile_schemas = find_program('glib-compile-schemas', required: false)
+
+
+if compile_schemas.found()
+
+
+  test('Validate schema file',
+
+
+       compile_schemas,
+
+
+       args: ['--strict', '--dry-run', meson.current_source_dir()])
+
+
+endif
 subdir('icons')
