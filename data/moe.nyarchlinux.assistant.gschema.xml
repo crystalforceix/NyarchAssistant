@@ -173,7 +173,7 @@
           <default>"{}"</default>
         </key>
         <key name="smart-prompt-on" type="b">
-          <default>true</default>
+          <default>false</default>
         </key>
         <key name="user-name" type="s">
           <default>"User"</default>
