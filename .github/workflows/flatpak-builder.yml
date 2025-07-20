@@ -1,6 +1,7 @@
 on:
   push:
-    branches: [ master ]
+    branches: [ personal-branch ]
+  workflow_dispatch:
 name: Flatpak Build
 jobs:
   flatpak:
