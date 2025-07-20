@@ -1,4 +1,4 @@
-application_id = 'moe.nyarchlinux.assistant'
+application_id = 'moe.waifu.assistant'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(
