@@ -85,6 +85,6 @@ src/handlers/memory/memoripy_handler.py
 src/handlers/tts/custom_handler.py
 src/handlers/memory/summary_memoripy_handler.py
 src/handlers/translator/ligva_handler.py
-data/moe.waifu.assistant.appdata.xml.in
-data/moe.waifu.assistant.desktop.in
-data/moe.waifu.assistant.gschema.xml
+data/moe.nyarchlinux.assistant.appdata.xml.in
+data/moe.nyarchlinux.assistant.desktop.in
+data/moe.nyarchlinux.assistant.gschema.xml

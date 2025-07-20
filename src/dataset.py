@@ -221,6 +221,6 @@ ollama pull hf.co/{username}/{repository}
 if is_flatpak():
     dataset_path = "/app/data/smart-prompts/dataset.csv"
 else:
-    dataset_path = "/usr/share/waifuassistant/dataset.csv"
+    dataset_path = "/usr/share/nyarchassistant/dataset.csv"
 DATASET = reconstruct_dataset_from_csv(dataset_path)
 

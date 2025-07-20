@@ -1,9 +1,9 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'waifuassistant')
+moduledir = join_paths(pkgdatadir, 'nyarchassistant')
 gnome = import('gnome')
 
-gnome.compile_resources('waifuassistant',
-  'waifuassistant.gresource.xml',
+gnome.compile_resources('nyarchassistant',
+  'nyarchassistant.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
@@ -22,15 +22,15 @@ conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
-  input: 'waifuassistant.in',
-  output: 'waifuassistant',
+  input: 'nyarchassistant.in',
+  output: 'nyarchassistant',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir'),
   install_mode: 'r-xr--r--'
 )
 
-waifuassistant_sources = [
+nyarchassistant_sources = [
   '__init__.py',
   'main.py',
   'constants.py',
@@ -205,7 +205,7 @@ smart_prompts_sources = [
  'handlers/smart_prompt/smart_prompt.py',
 ]
 
-install_data(waifuassistant_sources, install_dir: moduledir)
+install_data(nyarchassistant_sources, install_dir: moduledir)
 install_data(ui_sources, install_dir: moduledir / 'ui')
 install_data(widgets_sources, install_dir: moduledir / 'ui' / 'widgets')
 install_data(handler_sources, install_dir: moduledir / 'handlers')

@@ -31,16 +31,16 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-locale.bindtextdomain('waifuassistant', localedir)
-locale.textdomain('waifuassistant')
-gettext.install('waifuassistant', localedir)
+locale.bindtextdomain('nyarchassistant', localedir)
+locale.textdomain('nyarchassistant')
+gettext.install('nyarchassistant', localedir)
 
 if __name__ == '__main__':
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'waifuassistant.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'nyarchassistant.gresource'))
     resource._register()
 
-    from waifuassistant import main
+    from nyarchassistant import main
     sys.exit(main.main(VERSION))

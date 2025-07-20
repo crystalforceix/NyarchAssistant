@@ -20,7 +20,7 @@ AVAILABLE_INTEGRATIONS = [WebsiteReader, WebsearchIntegration]
 
 from .dataset import DATASET, WIKI_PROMPTS
 
-DIR_NAME = "WaifuAssistant"
+DIR_NAME = "NyarchAssistant"
 SCHEMA_ID = 'moe.nyarchlinux.assistant'
 AVAILABLE_LLMS = {
     "nyarch": {
