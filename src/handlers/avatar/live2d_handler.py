@@ -60,7 +60,7 @@ class Live2DHandler(AvatarHandler):
                 "description": _("Live2D Model to use"),
                 "type": "combo",
                 "values": self.get_available_models(),
-                "default": "Arch/arch chan model0.model3.json",
+                "default": "tuzi_mian__2_/tuzi mian.model3.json",
                 "folder": os.path.abspath(self.models_dir),
                 "refresh": lambda x: self.settings_update(),
                 "update_settings": True
@@ -120,7 +120,7 @@ class Live2DHandler(AvatarHandler):
         return os.path.isdir(self.webview_path)
 
     def install(self):
-        subprocess.check_output(["git", "clone", "https://github.com/crystalforceix/live2d-lipsync-viewer.git", self.webview_path])
+        subprocess.check_output(["git", "clone", "https://github.com/crystalforceix/live2d-lipsync-viewer-lfs.git", self.webview_path])
         subprocess.check_output(["wget", "-P", os.path.join(self.models_dir), "https://files.catbox.moe/b1h0qm.xz"])
         subprocess.check_output(["tar", "-Jxf", os.path.join(self.models_dir, "b1h0qm.xz"), "-C", self.models_dir])
         subprocess.Popen(["rm", os.path.join(self.models_dir, "b1h0qm.xz")])

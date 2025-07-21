@@ -12,8 +12,8 @@
   "sources" : [
     {
       "type": "file",
-      "url": "https://github.com/NyarchLinux/live2d-lipsync-viewer/releases/download/0.5/pack.tar.xz",
-      "sha256": "a2a85f7c75878e88b0ec33946d374a7babdcc8a041196532d5d918d3740f265c",
+      "url": "https://github.com/crystalforceix/live2d-lipsync-viewer-lfs/releases/download/v1.0/live2d-lipsync-viewer-lfs.tar.xz",
+      "sha256": "63232a32829631d559625c695335ef4f60890169369b80df9d9f5e35e8625f5d",
       "dest-filename": "download.tar.xz"
     },
     {
