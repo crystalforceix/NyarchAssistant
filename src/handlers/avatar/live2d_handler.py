@@ -46,7 +46,7 @@ class Live2DHandler(AvatarHandler):
 
     def get_model(self):
         m = self.get_setting("model", False)
-        return "Arch/arch chan model0.model3.json" if m is None else m
+        return "tuzi_mian__2_/tuzi mian.model3.json" if m is None else m
 
     def get_extra_settings(self) -> list:
         widget = Gtk.Box()
